@@ -1,0 +1,492 @@
+* {
+    margin:0; /*внешние отступы*/
+    padding: 0;
+}
+html,body {
+    height: 100%; /*высота*/
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+  position: absolute;
+  width: 1920px;
+  height: 89px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.91);
+}
+.logo {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 118px;
+  height: 72px;
+  left: 10px;
+  top: 8px;
+  text-decoration: none; /*убираем подчёркивание*/
+
+  /* THEY KNOW */
+  width: 74px;
+  height: 52px;
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.opacity:active {
+  opacity: 0.6;
+}
+#comp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none; /*убираем подчёркивание*/
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.componentheader1 {
+  /* Auto layout */
+  position: absolute;
+  width: 116px;
+  height: 40px;
+  left: 182px;
+  top: 24px;
+
+  /* ОБ ИГРЕ */
+  width: 86px;
+  height: 24px;
+}
+.componentheader2 {
+  /* Auto layout */
+  position: absolute;
+  width: 98px;
+  height: 40px;
+  left: 352px;
+  top: 24px;
+
+  /* МЕДИА */
+  width: 74px;
+  height: 24px;
+}
+.componentheader3 {
+  /* Auto layout */
+  position: absolute;
+  width: 114px;
+  height: 40px;
+  left: 504px;
+  top: 24px;
+
+  /* НОВОСТИ */
+  width: 101px;
+  height: 24px;
+}
+.componentheader4 {
+  /* Auto layout */
+  position: absolute;
+  width: 161px;
+  height: 40px;
+  left: 672px;
+  top: 24px;
+
+  /* ПОДДЕРЖКА */
+  width: 131px;
+  height: 24px;
+}
+.componentheader5 {
+  position: absolute;
+  width: 47.4px;
+  height: 45.4px;
+  left: 1654px;
+  top: 21px;
+}
+.pressing:active {
+  box-shadow: inset -4px 0px 4px rgba(0, 0, 0, 0.25), inset 4px 0px 4px rgba(0, 0, 0, 0.25), inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.play {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 36px;
+  gap: 10px;
+  position: absolute;
+  width: 148px;
+  height: 46px;
+  left: 1736px;
+  top: 21px;
+  background: #FFFFFF;
+  border-radius: 17px;
+
+  /* ИГРАТЬ */
+  width: 76px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.mainimg {
+  /* Комната Миши 1 */
+  position: absolute;
+  width: 1919.16px;
+  height: 1079px;
+  left: 0px;
+  top: 0px;
+  background: url(КомнатаМиши.jpg);
+  filter: blur(6.5px);
+}
+.mainlogo {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 340px;
+  height: 84px;
+  left: 790px;
+  top: 419px;
+  filter: drop-shadow(0px -1px 4px #000000) drop-shadow(0px 1px 4px #000000);
+
+  /* THEY KNOW */
+  width: 335px;
+  height: 63px;
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 63px;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.title {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 579px;
+  height: 84px;
+  left: 670px;
+  top: 503px;
+  filter: drop-shadow(0px -1px 4px #000000) drop-shadow(0px 1px 4px #000000);
+
+  /* "Миша и Тайное Общество" */
+  width: 549px;
+  height: 53px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+
+  /* identical to box height */
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.frame1 {
+  /* Rectangle 3 */
+  position: absolute;
+  width: 1920px;
+  height: 131px;
+  left: 0px;
+  top: 948px;
+  background: rgba(0, 0, 0, 0.91);
+}
+.titlecom1 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 191px;
+  height: 68px;
+  left: 864px;
+  top: 980px;
+
+  /* ОБ ИГРЕ */
+  width: 171px;
+  height: 48px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.person1 {
+  /* Миша (анфас) 1 */
+  position: absolute;
+  width: 219px;
+  height: 640px;
+  left: 168px;
+  top: 1120px;
+  background: url(Миша.png);
+}
+.person2 {
+  /* Ваня (анфас) 1 */
+  position: absolute;
+  width: 102.47px;
+  height: 236.71px;
+  left: 320px;
+  top: 1450px;
+  background: url(Ваня.png);
+  transform: rotate(23.89deg);
+}
+.person3 {
+  /* Александр Сергеевич (анфас) 1 */
+  position: absolute;
+  width: 83.93px;
+  height: 312.06px;
+  left: 140px;
+  top: 1420px;
+  background: url(АлександрСергеевич);
+  transform: rotate(-28.19deg);
+}
+.description {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 1208px;
+  height: 424px;
+  left: 579px;
+  top: 1228px;
+
+  /* "They Know" - это...*/
+  width: 1168px;
+  height: 406px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.frame2 {
+  /* Rectangle 4 */
+  position: absolute;
+  width: 1920px;
+  height: 131px;
+  left: -1px;
+  top: 1810px;
+  background: rgba(0, 0, 0, 0.91);
+}
+.titlecom2 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 167px;
+  height: 68px;
+  left: 876px;
+  top: 1842px;
+
+  /* МЕДИА */
+  width: 147px;
+  height: 48px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.img1 {
+  /* дневник макет 2 1 */
+  position: absolute;
+  width: 553px;
+  height: 311px;
+  left: 163px;
+  top: 2169px;
+  background: url(Дневник.jpg);
+  border-radius: 17px;
+}
+.frame3 {
+  /* Rectangle 2 */
+  position: absolute;
+  width: 1920px;
+  height: 185px;
+  left: 0px;
+  top: 4012px;
+  background: rgba(0, 0, 0, 0.91);
+}
+.componentfooter1 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 316px;
+  height: 41px;
+  left: 419px;
+  top: 4084px;
+
+  /* ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ */
+  width: 296px;
+  height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.componentfooter2 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 246px;
+  height: 41px;
+  left: 837px;
+  top: 4084px;
+
+  /* УСЛОВИЯ ИСПОЛЬЗОВАНИЯ */
+  width: 226px;
+  height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.componentfooter3 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 194px;
+  height: 41px;
+  left: 1185px;
+  top: 4084px;
+
+  /* НАСТРОЙКИ COOKIE */
+  width: 174px;
+  height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.sticky-header {
+  position: fixed;
+  top: 0;  /* Критически важно! */
+  z-index: 1000;  /* Шапка должна быть поверх других элементов */
+}
+.scr {
+  position: absolute;
+  width: 1920px;
+  height: 1px;
+  left: 0px;
+}
+#scroll1 {
+  top: 0px;
+}
+#scroll2 {
+  top: 859px;
+}
+#scroll3 {
+  top: 1721px;
+}
