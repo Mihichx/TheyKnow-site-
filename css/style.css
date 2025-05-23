@@ -1,19 +1,17 @@
 * {
-    margin:0; /*внешние отступы*/
-    padding: 0;
+  margin:0; /*внешние отступы*/
+  padding: 0;
 }
 html,body {
-    height: 100%; /*высота*/
+  height: 100%; /*высота*/
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 header {
   position: absolute;
   width: 1920px;
   height: 89px;
-  left: 0px;
-  top: 0px;
   background: rgba(0, 0, 0, 0.91);
 }
 .logo {
