@@ -4,6 +4,7 @@
 }
 html,body {
   height: 100%; /*высота*/
+  background-color: #F2F2F2; /*цвет фона*/
 }
 html {
   scroll-behavior: smooth;
@@ -57,7 +58,7 @@ main {
   align-items: center;
   padding: 10px;
   gap: 10px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -133,7 +134,7 @@ main {
   /* Команда Крутые перцы */
   width: 142px;
   height: 48px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -241,10 +242,10 @@ main {
   /* ОБ ИГРЕ */
   width: 171px;
   height: 48px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 39px;
   line-height: 48px;
   text-align: center;
   color: #FFFFFF;
@@ -279,7 +280,7 @@ main {
   /* "They Know" - это...*/
   width: 1168px;
   height: 406px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -317,7 +318,7 @@ main {
   /* ПЕРСОНАЖИ */
   width: 263px;
   height: 48px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -354,7 +355,7 @@ main {
   /* Миша - главный герой...*/
   width: 1217px;
   height: 290px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -392,7 +393,7 @@ main {
   /* Ваня - студент...*/
   width: 1173px;
   height: 232px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -430,7 +431,7 @@ main {
   /* Преподаватель литературы - Александр Сергеевич...*/
   width: 1260px;
   height: 232px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -468,7 +469,7 @@ main {
   /* Жека - бариста...*/
   width: 1136px;
   height: 174px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -506,7 +507,7 @@ main {
   /* Библиотекарь - добрая старушка...*/
   width: 1150px;
   height: 116px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -545,7 +546,7 @@ main {
   /* УРОВНИ */
   width: 167px;
   height: 48px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -583,7 +584,7 @@ main {
   /* 1. Тайный знак...*/
   width: 893px;
   height: 270px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -612,7 +613,7 @@ main {
   /* 2. Кабинет 403...*/
   width: 893px;
   height: 270px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -649,7 +650,7 @@ main {
   /* 3. Старый шкаф...*/
   width: 893px;
   height: 332px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -678,7 +679,7 @@ main {
   /* 4. Найти Ваню...*/
   width: 893px;
   height: 168px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -715,7 +716,7 @@ main {
   /* 5. Тайный код...*/
   width: 893px;
   height: 492px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -752,7 +753,7 @@ main {
   /* УЧАСТНИКИ КОМАНДЫ */
   width: 473px;
   height: 48px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -791,7 +792,7 @@ main {
   /* ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ */
   width: 296px;
   height: 21px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -820,7 +821,7 @@ main {
   /* УСЛОВИЯ ИСПОЛЬЗОВАНИЯ */
   width: 226px;
   height: 21px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -849,7 +850,7 @@ main {
   /* НАСТРОЙКИ COOKIE */
   width: 174px;
   height: 21px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
