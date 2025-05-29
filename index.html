@@ -7,83 +7,116 @@
     <title>TheyKnow</title>
 </head>
 <body>
-    <main>
-        <div id="scroll1" class="scr"></div>
-        <img class="mainimg" src="img/КомнатаМиши.jpg">
-        <a class="main-name-game">
-            THEY KNOW
-        </a>
-        <a class="slogan">
-            "Миша и Тайное Сообщество"
-        </a>
-        <div id="scroll2" class="scr"></div>
-        <div class="frame1"></div>
-        <a class="titlecom1">
-            ОБ ИГРЕ
-        </a>
-        <img class="photo1" src="img/ГлавноеМеню.jpg">
-        <a class="description">"They Know" - это приключенческий детектив, где ты играешь за Мишу, обычного студента, чья жизнь переворачивается с ног на голову после случайной находки старого дневника.  Сможешь ли ты разгадать тайну, пока не стало слишком поздно? Цена правды может оказаться слишком высокой.</a>
-        <div id="scroll3" class="scr"></div>
-        <div class="frame2"></div>
-        <a class="titlecom2">
-            ПЕРСОНАЖИ
-        </a>
-        <img class="person1" src="img/Миша.png">
-        <a class="character-description1">Миша - главный герой, обычный парень, студент первого курса колледжа. Он спокойный, немного замкнутый, не особо любит шумные компании. Учёба для него важна, но он не отличник — просто старается держаться на уровне.</a>
-        <img class="person2" src="img/Ваня.png">
-        <a class="character-description2">Ваня - студент, который учится по специальности правоохранительные органы. Отличительный элемент шрам около глаза, который сразу привлекает внимание.</a>
-        <img class="person3" src="img/АлександрСергеевич.png">
-        <a class="character-description3">Преподаватель литературы - Александр Сергеевич, мужчина средних лет, седой, худощавого телосложения. Начал замечать странное поведение Миши.</a>
-        <img class="person4" src="img/Жека.png">
-        <a class="character-description4">Жека - бариста, бывший студент мвеу, имеет отличительную черту - татуировку с символом тайного сообщества.</a>
-        <img class="person5" src="img/Библиотекарша.png">
-        <a class="character-description5">Библиотекарь - добрая старушка, помогла найти книгу для расследования.</a>
-        <div id="scroll4" class="scr"></div>
-        <div class="frame3"></div>
-        <a class="titlecom3">
-            УРОВНИ
-        </a>
-        <img class="photo2" src="img/Туалет.jpg">
-        <a class="location-description1">1. Тайный знак. Игроку нужно найти книгу в библиотеке, смахивая пыль с книг. В книге будет подсказка, что дальше нужно отправиться в 403 аудиторию.</a>
-        <a class="location-description2">2. Кабинет 403. Здесь игрок должен с помощью азбуке морзе разгадать загадку с мигающей лампой. Фраза приведет игроку к старинному шкафу с фотографией. </a>
-        <img class="photo3" src="img/Дневник.jpg">
-        <a class="location-description3">3. Старый шкаф. Игрок должен найти кусочки фотографии и сложить их в одну картину. С помощью этой фотографии игрок узнает, что Ваня (студент, который состоял в тайном сообществе) все еще учиться в мвеке.</a>
-        <a class="location-description4">4. Найти Ваню. Игрок должен найти в расписании аудиторию, в которой будет пара у Вани и найти этот кабинет. </a>
-        <img class="photo4" src="img/Коридор.jpg">
-        <a class="location-description5">5. Тайный код. Миша шел в сторону Вани, но тут его остановил преподаватель по литературе и отвел к себе в кабинет, там игрок должен заметить листок с кодом на столе, числа соответствуют буквам алфавита (а=1, б=2 и т.д.). Решив эту головоломку, игрок поймет, что дальше нужно идти в кафе.</a>
-        <div id="scroll5" class="scr"></div>
-        <div class="frame4"></div>
-        <a class="titlecom4">
-            УЧАСТНИКИ КОМАНДЫ
-        </a>
-    </main>
-    <header class="sticky-header">
-        <a href="#scroll1" class="name-game opacity">
-            THEY
-            <br/>
-            KNOW
-        </a>
-            <a href="#scroll2" id="comp" class="componentheader1 opacity">ОБ ИГРЕ</a>
-            <a href="#scroll3" id="comp" class="componentheader2 opacity">ПЕРСОНАЖИ</a>
-            <a href="#scroll4" id="comp" class="componentheader3 opacity">УРОВНИ</a>
-            <a href="#scroll5" id="comp" class="componentheader4 opacity">УЧАСТНИКИ КОМАНДЫ</a>
-        <a class="team">
-            Команда
-            <br/>
-            Крутые перцы
-        </a>
-    </header>
-    <footer>
-        <div class="frame5"></div>
-        <a class="componentfooter1">
-            ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
-        </a>
-        <a class="componentfooter2">
-            УСЛОВИЯ ИСПОЛЬЗОВАНИЯ
-        </a>
-        <a class="componentfooter3">
-            НАСТРОЙКИ COOKIE
-        </a>
-    </footer>
+    <div id="wrapper" class="content">
+        <header class="sticky-header">
+            <div id="logo">
+                <a href="#scroll1" class="name-game opacity">
+                    THEY
+                    <br/>
+                    KNOW
+                </a>
+            </div>
+            <nav id="headernav">
+                <ul>
+                    <li><a href="#scroll2" class="opacity">ОБ ИГРЕ</a></li>
+                    <li><a href="#scroll3" class="opacity">ПЕРСОНАЖИ</a></li>
+                    <li><a href="#scroll4" class="opacity">УРОВНИ</a></li>
+                    <li><a href="#scroll5" class="opacity">УЧАСТНИКИ КОМАНДЫ</a></li>
+                </ul>
+            </nav>
+            <div id="team">
+                <a class="team">
+                    Команда
+                    <br/>
+                    Крутые перцы
+                </a>
+            </div>
+        </header>
+        <main id="scroll1">
+            <div id="greeting">
+                <img class="mainimg" alt="" src="img/КомнатаМиши.jpg">
+                <a class="main-name-game">
+                    THEY KNOW
+                </a>
+                <a class="slogan">
+                    "Миша и Тайное Сообщество"
+                </a>
+            </div>
+            <div id="scroll2" class="frame1">
+                <a class="titlecom1">
+                    ОБ ИГРЕ
+                </a>
+            </div>
+            <div class="main">
+                <img class="photo1" alt="" src="img/ГлавноеМеню.jpg">
+                <a class="description">"They Know" - это приключенческий детектив, где ты играешь за Мишу, обычного студента, чья жизнь переворачивается с ног на голову после случайной находки старого дневника.  Сможешь ли ты разгадать тайну, пока не стало слишком поздно? Цена правды может оказаться слишком<br/>высокой.</a>
+            </div>
+            <div id="scroll3" class="frame">
+                <a class="titlecom">
+                    ПЕРСОНАЖИ
+                </a>
+            </div>
+            <div class="main">
+                <img id="pers" class="person1" alt="" src="img/Миша.png">
+                <a class="character-description">Миша - главный герой, обычный парень, студент первого курса колледжа. Он спокойный, немного замкнутый, не особо любит шумные компании. Учёба для него важна, но он не отличник — просто старается держаться на уровне.</a>
+            </div>
+            <div class="main">
+                <img id="pers" class="person2" alt="" src="img/Ваня.png">
+                <a class="character-description">Ваня - студент, который учится по специальности правоохранительные органы. Отличительный элемент шрам около глаза, который сразу привлекает внимание.</a>
+            </div>
+            <div class="main">
+                <img id="pers" class="person3" alt="" src="img/АлександрСергеевич.png">
+                <a class="character-description">Преподаватель литературы - Александр Сергеевич, мужчина средних лет, седой, худощавого телосложения. Начал замечать странное поведение Миши.</a>
+            </div>
+            <div class="main">
+                <img id="pers" class="person4" alt="" src="img/Жека.png">
+                <a class="character-description">Жека - бариста, бывший студент мвеу, имеет отличительную черту - татуировку с символом тайного сообщества.</a>
+            </div>
+            <div class="main">
+                <img id="pers" class="person5" alt="" src="img/Библиотекарша.png">
+                <a class="character-description">Библиотекарь - добрая старушка, помогла найти книгу для расследования.</a>
+            </div>
+            <div id="scroll4" class="frame">
+                <a class="titlecom">
+                    УРОВНИ
+                </a>
+            </div>
+            <div class="main">
+                <img class="photo2" alt="" src="img/Туалет.jpg">
+                <div class="level1">
+                    <a class="location-description1">1. Тайный знак. Игроку нужно найти книгу в библиотеке, смахивая пыль с книг. В книге будет подсказка, что дальше нужно отправиться в 403 аудиторию.</a>
+                    <a class="location-description2">2. Кабинет 403. Здесь игрок должен с помощью азбуке морзе разгадать загадку с мигающей лампой. Фраза приведет игроку к старинному шкафу с фотографией. </a>
+                </div>
+            </div>
+            <div class="main0">
+                <div class="level-img">
+                    <img class="photo3" alt="" src="img/Дневник.jpg">
+                    <img class="photo4" alt="" src="img/Коридор.jpg">
+                </div>
+                <div class="level2">
+                    <a class="location-description3">3. Старый шкаф. Игрок должен найти кусочки фотографии и сложить их в одну картину. С помощью этой фотографии игрок узнает, что Ваня (студент, который состоял в тайном сообществе) все еще учиться в мвеке.</a>
+                    <a class="location-description4">4. Найти Ваню. Игрок должен найти в расписании аудиторию, в которой будет пара у Вани и найти этот кабинет. </a>
+                    <a class="location-description5">5. Тайный код. Миша шел в сторону Вани, но тут его остановил преподаватель по литературе и отвел к себе в кабинет, там игрок должен заметить листок с кодом на столе, числа соответствуют буквам алфавита (а=1, б=2 и т.д.). Решив эту головоломку, игрок поймет, что дальше нужно идти в кафе.</a>
+                </div>
+            </div>
+            <div id="scroll5" class="frame">
+                <a class="titlecom">
+                    УЧАСТНИКИ КОМАНДЫ
+                </a>
+            </div>
+            <div class="main">
+
+            </div>
+        </main>
+        <footer>
+            <nav id="footernav">
+                <ul>
+                    <li><a>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                    <li><a>УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a></li>
+                    <li><a>НАСТРОЙКИ COOKIE</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
