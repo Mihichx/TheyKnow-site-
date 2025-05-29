@@ -1,890 +1,375 @@
 * {
   margin:0; /*внешние отступы*/
-  padding: 0;
+  padding: 0; /*внутренние отступы*/
 }
 html,body {
   height: 100%; /*высота*/
   background-color: #F2F2F2; /*цвет фона*/
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*плавная прокрутка*/
+}
+header, main, footer {
+  width: 100%; /*ширина*/
+  margin: 0 auto; /*внешние отступы (авто)*/
 }
 header {
-  width: 1920px;
-  height: 89px;
-  background: rgba(0, 0, 0, 0.91);
+  display: flex;
+  height: 89px; /*высота*/
+  background: rgba(0, 0, 0, 0.91); /*цвет фона*/
 }
 main {
-  width: 1920px;
-  height: 8010px;
+  display: flex;
+  flex-direction: column; /*расположение компонентов с веху вниз*/
+  width: 100%;
+  max-width: 1920px;
+  text-align: center;
+}
+footer {
+  display: flex;
+  height: 185px; /*высота*/
+  background: rgba(0, 0, 0, 0.91); /*цвет фона*/
+}
+.center {
+  left: 50%; /* Позиционирование по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование текста */
+}
+.content {
+  display: flex; /*flex-контейнер*/
+  flex-direction: column; /*расположение компонентов с веху вниз*/
+  height: 100%; /*высота*/
+  min-height: 100%; /*мин высота*/
+  height: auto !important; /*высота с приоритетом*/
+  width: auto; /*ширина*/
+  margin-top: 0; /*отступы с верху*/
+  margin-bottom: 0; /*отступы с низу*/
+  margin-left: auto; /*отступы с лева*/
+  margin-right: auto; /*отступы с права*/
 }
 .name-game {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 118px;
-  height: 72px;
-  left: 10px;
-  top: 8px;
-  text-decoration: none; /*убираем подчёркивание*/
-
-  /* THEY KNOW */
-  width: 71px;
-  height: 52px;
-  font-family: 'Jacques Francois';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  font-weight: 400; /*толщина букв*/
+  font-size: 23px; /*размер шрифта*/
+  color: #FFFFFF; /*цвет*/
+  text-decoration: none; /*убираем подчёркивание*/
+}
+#headernav ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0;
+  padding-left: 35px;
+  padding-top: 32px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400; /*толщина букв*/
+  font-size: 20px; /*размер шрифта*/
+  letter-spacing: 0.5px; /*интервал между буквами*/
+}
+#headernav li {
+  display: inline; /*выстраиваем пункты меню в ряд*/
+}
+#headernav a {
+  text-decoration: none; /*убираем подчёркивание*/
+  color: white;
+  margin-left: 50px; /*внешние отступы с лева*/
+}
+#team {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
 .opacity:active {
   opacity: 0.6;
 }
-#comp {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-decoration: none; /*убираем подчёркивание*/
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.componentheader1 {
-  /* Auto layout */
-  position: absolute;
-  width: 116px;
-  height: 40px;
-  left: 182px;
-  top: 24px;
-
-  /* ОБ ИГРЕ */
-  width: 86px;
-  height: 24px;
-}
-.componentheader2 {
-  /* Auto layout */
-  position: absolute;
-  width: 145px;
-  height: 40px;
-  left: 327px;
-  top: 24px;
-
-  /* ПЕРСОНАЖИ */
-  width: 132px;
-  height: 24px;
-}
-.componentheader3 {
-  /* Auto layout */
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  left: 518px;
-  top: 24px;
-
-  /* УРОВНИ */
-  width: 84px;
-  height: 24px;
-}
-.componentheader4 {
-  /* Auto layout */
-  position: absolute;
-  width: 253px;
-  height: 40px;
-  left: 664px;
-  top: 24px;
-
-  /* УЧАСТНИКИ КОМАНДЫ */
-  width: 237px;
-  height: 24px;
-}
 .team {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 162px;
-  height: 68px;
-  left: 1730px;
-  top: 10px;
-
-  /* Команда Крутые перцы */
-  width: 142px;
-  height: 48px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 400; /*толщина букв*/
+  font-size: 20px; /*размер шрифта*/
+  letter-spacing: 0.5px; /*интервал между буквами*/
   color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+#greeting {
+  position: relative;
+  width: 100%;
+  height: 1080px;
 }
 .mainimg {
-  /* Комната Миши 1 */
-  position: absolute;
-  width: 1919.16px;
-  height: 1079px;
-  left: 0px;
-  top: 0px;
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
   filter: blur(6.5px);
 }
-.main-name-game {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 340px;
-  height: 84px;
-  left: 790px;
-  top: 419px;
-  filter: drop-shadow(0px -1px 4px #000000) drop-shadow(0px 1px 4px #000000);
-
-  /* THEY KNOW */
-  width: 335px;
-  height: 63px;
+.main-name-game{
+  position: absolute; /* Текст - абсолютная позиция */
+  top: 45%; /* Позиционирование по вертикали */
+  left: 50%; /* Позиционирование по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование текста */
   font-family: 'Jacques Francois';
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 63px;
   color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  text-shadow: 0px -1px 4px #000000, 0px 1px 4px #000000;
 }
 .slogan {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
   position: absolute;
-  width: 616px;
-  height: 84px;
-  left: 652px;
-  top: 503px;
-  filter: drop-shadow(0px -1px 4px #000000) drop-shadow(0px 1px 4px #000000);
-
-  /* "Миша и Тайное Сообщество" */
-  width: 592px;
-  height: 53px;
+  top: 52%; /* Позиционирование по вертикали */
+  left: 50%; /* Позиционирование по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование текста */
   font-family: 'Jacques Francois';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
   color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  text-shadow: 0px -1px 4px #000000, 0px 1px 4px #000000;
 }
 .frame1 {
-  /* Rectangle 3 */
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
   position: absolute;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 131px;
-  left: 0px;
-  top: 948px;
+  top: 1015px;
+
   background: rgba(0, 0, 0, 0.91);
 }
-.titlecom1 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 191px;
-  height: 68px;
-  left: 864px;
-  top: 980px;
-
-  /* ОБ ИГРЕ */
-  width: 171px;
-  height: 48px;
-  font-family: 'Roboto', sans-serif;
+.titlecom1 {     
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 39px;
+  font-size: 40px;
   line-height: 48px;
   text-align: center;
   color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+.main {
+  display: flex;
+  align-items: center; /* по вертикали */
+  height: auto;
 }
 .photo1 {
-  position: absolute;
   width: 563.83px;
   height: 317px;
-  left: 35px;
-  top: 1285px;
+  padding-left: 35px;
   border-radius: 17px;
 }
 .description {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1208px;
-  height: 424px;
-  left: 653px;
-  top: 1235px;
-
-  /* "They Know" - это...*/
-  width: 1168px;
-  height: 406px;
-  font-family: 'Roboto', sans-serif;
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
+  padding-left: 74px;
+  padding-right: 81px;
+  padding-top: 164px;
+  padding-bottom: 160px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
   color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-.frame2 {
-  /* Rectangle 4 */
-  position: absolute;
-  width: 1920px;
+.frame {
+  position: relative;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  width: 100%;
+  max-width: 1920px;
   height: 131px;
-  left: -1px;
-  top: 1810px;
+  flex-shrink: 0;
+  box-sizing: border-box;
   background: rgba(0, 0, 0, 0.91);
 }
-.titlecom2 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 283px;
-  height: 68px;
-  left: 818px;
-  top: 1843px;
-
-  /* ПЕРСОНАЖИ */
-  width: 263px;
-  height: 48px;
-  font-family: 'Roboto', sans-serif;
+.titlecom {     
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   text-align: center;
   color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+#pers {
+  padding-left: 95px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+.character-description {
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
+  padding-left: 152px;
+  padding-right: 98px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
 }
 .person1 {
-  position: absolute;
   width: 358.35px;
   height: 513px;
-  left: 95px;
-  top: 1992px;
-}
-.character-description1 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1237px;
-  height: 310px;
-  left: 595px;
-  top: 2094px;
-
-  /* Миша - главный герой...*/
-  width: 1217px;
-  height: 290px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .person2 {
-  position: absolute;
   width: 395.77px;
   height: 532px;
-  left: 85px;
-  top: 2597px;
-}
-.character-description2 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1193px;
-  height: 252px;
-  left: 639px;
-  top: 2737px;
-
-  /* Ваня - студент...*/
-  width: 1173px;
-  height: 232px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .person3 {
-  position: absolute;
   width: 321.2px;
   height: 532px;
-  left: 115px;
-  top: 3220px;
-}
-.character-description3 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1280px;
-  height: 252px;
-  left: 542px;
-  top: 3360px;
-
-  /* Преподаватель литературы - Александр Сергеевич...*/
-  width: 1260px;
-  height: 232px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .person4 {
-  position: absolute;
   width: 337px;
   height: 450px;
-  left: 115px;
-  top: 3873px;
-}
-.character-description4 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1156px;
-  height: 194px;
-  left: 666px;
-  top: 4006px;
-
-  /* Жека - бариста...*/
-  width: 1136px;
-  height: 174px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .person5 {
-  position: absolute;
   width: 378px;
   height: 440px;
-  left: 106px;
-  top: 4501px;
 }
-.character-description5 {
-  /* Auto layout */
+.frame {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 1170px;
-  height: 136px;
-  left: 662px;
-  top: 4653px;
-
-  /* Библиотекарь - добрая старушка...*/
-  width: 1150px;
-  height: 116px;
-  font-family: 'Roboto', sans-serif;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  width: 100%;
+  max-width: 1920px;
+  height: 131px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.91);
+}
+.level1 {
+  display: flex;
+  align-items: center; /* по вертикали */
+  flex-direction: column; /*расположение компонентов с веху вниз*/
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
+  padding-left: 54px;
+  padding-right: 43px;
+  padding-top: 68px;
+  padding-bottom: 84px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
-  display: flex;
-  align-items: center;
   color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.frame3 {
-  position: absolute;
-  width: 1920px;
-  height: 131px;
-  left: 0px;
-  top: 4982px;
-  background: rgba(0, 0, 0, 0.91);
-}
-.titlecom3 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 187px;
-  height: 68px;
-  left: 866px;
-  top: 5014px;
-
-  /* УРОВНИ */
-  width: 167px;
-  height: 48px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.photo2 {
-  position: absolute;
-  width: 896.44px;
-  height: 504px;
-  left: 34px;
-  top: 5217px;
-  border-radius: 17px;
 }
 .location-description1 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 913px;
-  height: 312px;
-  left: 974px;
-  top: 5160px;
-
-  /* 1. Тайный знак...*/
-  width: 893px;
-  height: 270px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 54px;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  padding-bottom: 21px;
 }
 .location-description2 {
-  /* Auto layout */
+  padding-top: 21px;
+}
+.photo2 {
+  width: 896.44px;
+  height: 504px;
+  border-radius: 17px;
+  padding-left: 34px;
+  padding-top: 105px;
+  padding-bottom: 127px;
+}
+.level2 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 913px;
-  height: 312px;
-  left: 974px;
-  top: 5472px;
-
-  /* 2. Кабинет 403...*/
-  width: 893px;
-  height: 270px;
-  font-family: 'Roboto', sans-serif;
+  align-items: center; /* по вертикали */
+  flex-direction: column; /*расположение компонентов с веху вниз*/
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
+  padding-left: 44px;
+  padding-right: 108px;
+  padding-bottom: 61px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  line-height: 54px;
+  font-size: 48px;
+  line-height: 58px;
   color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .photo3 {
-  position: absolute;
   width: 827px;
   height: 465px;
-  left: 1056px;
-  top: 5893px;
   border-radius: 17px;
-}
-.location-description3 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 913px;
-  height: 373px;
-  left: 34px;
-  top: 5847px;
-
-  /* 3. Старый шкаф...*/
-  width: 893px;
-  height: 332px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 54px;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.location-description4 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 913px;
-  height: 191px;
-  left: 44px;
-  top: 6220px;
-
-  /* 4. Найти Ваню...*/
-  width: 893px;
-  height: 168px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 54px;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  padding-bottom: 35.5px;
+  padding-right: 34px;
 }
 .photo4 {
-  position: absolute;
   width: 827px;
   height: 465px;
-  left: 1056px;
-  top: 6428px;
   border-radius: 17px;
+  padding-top: 35.5px;
+  padding-right: 34px;
+}
+.location-description3 {
+  padding-bottom: 21px;
+}
+.location-description4 {
+  padding-bottom: 21px;
+  padding-top: 21px;
 }
 .location-description5 {
-  /* Auto layout */
+  padding-top: 21px;
+}
+.main0 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 913px;
-  height: 563px;
-  left: 44px;
-  top: 6411px;
-
-  /* 5. Тайный код...*/
-  width: 893px;
-  height: 492px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 54px;
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  flex-direction:row-reverse;
+  align-items: center; /* по вертикали */
 }
-.frame4 {
-  position: absolute;
-  width: 1920px;
-  height: 131px;
-  left: 0px;
-  top: 7001px;
-  background: rgba(0, 0, 0, 0.91);
-}
-.titlecom4 {
-  /* Auto layout */
+.level-img {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 493px;
-  height: 68px;
-  left: 713px;
-  top: 7033px;
-
-  /* УЧАСТНИКИ КОМАНДЫ */
-  width: 473px;
-  height: 48px;
-  font-family: 'Roboto', sans-serif;
+  flex-direction:column;
+  align-items: center; /* по вертикали */
+}
+#footernav ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0;
+  padding-left: 14px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  font-weight: 400; /*толщина букв*/
+  font-size: 16px; /*размер шрифта*/
+  letter-spacing: 0.5px; /*интервал между буквами*/
 }
-.frame5 {
-  /* Rectangle 2 */
-  position: absolute;
-  width: 1920px;
-  height: 185px;
-  left: 0px;
-  top: 8010px;
-  background: rgba(0, 0, 0, 0.91);
+#footernav li {
+  display: inline; /*выстраиваем пункты меню в ряд*/
 }
-.componentfooter1 {
-  /* Auto layout */
+#footernav a {
+  text-decoration: none; /*убираем подчёркивание*/
+  color: white;
+  margin-left: 50px; /*внешние отступы с лева*/
+}
+#footernav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 316px;
-  height: 41px;
-  left: 480px;
-  top: 8082px;
-
-  /* ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ */
-  width: 296px;
-  height: 21px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.componentfooter2 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 246px;
-  height: 41px;
-  left: 898px;
-  top: 8082px;
-
-  /* УСЛОВИЯ ИСПОЛЬЗОВАНИЯ */
-  width: 226px;
-  height: 21px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.componentfooter3 {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  position: absolute;
-  width: 194px;
-  height: 41px;
-  left: 1246px;
-  top: 8082px;
-
-  /* НАСТРОЙКИ COOKIE */
-  width: 174px;
-  height: 21px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .sticky-header {
   position: fixed;
   top: 0;  /* Критически важно! */
   z-index: 1000;  /* Шапка должна быть поверх других элементов */
 }
-.scr {
-  position: absolute;
-  width: 1920px;
-  height: 1px;
-  left: 0px;
-}
-#scroll1 {
-  top: 0px;
-}
 #scroll2 {
-  top: 859px;
+  scroll-margin-top: 89px;
 }
 #scroll3 {
-  top: 1721px;
+  scroll-margin-top: 89px;
 }
 #scroll4 {
-  top: 4893px;
+  scroll-margin-top: 89px;
 }
 #scroll5 {
-  top: 6912px;
+  scroll-margin-top: 89px;
 }
