@@ -58,7 +58,7 @@ footer {
   list-style: none; /*убираем маркеры списка*/
   margin: 0;
   padding-left: 35px;
-  padding-top: 32px;
+  padding-top: 34.5px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400; /*толщина букв*/
@@ -141,7 +141,6 @@ footer {
   max-width: 1920px;
   height: 131px;
   top: 1015px;
-
   background: rgba(0, 0, 0, 0.91);
 }
 .titlecom1 {     
@@ -209,6 +208,8 @@ footer {
   text-align: left;     /* текст внутри ссылки прижат влево */
   width: auto;
   height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 152px;
   padding-right: 98px;
   font-family: 'Inter', sans-serif;
@@ -412,30 +413,194 @@ footer {
 #scroll5 {
   scroll-margin-top: 89px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
+  .name-game {
+    font-size: 15px; /*размер шрифта*/
+  }
+
+  #headernav ul {
+    padding-top: 36px;
+    font-size: 15px; /*размер шрифта*/
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  #headernav a {
+    margin-left: 15px; /*внешние отступы с лева*/
+  }
+
+  #team {
+    margin-right: 15px;
+  }
+  #logo{
+    margin-left: 15px;
+  }
+
+  .team {
+    font-size: 15px; /*размер шрифта*/
+  }
+
   .main {
-    display: flex;
     flex-direction: column;
-    height: auto;
   }
 
   .main0 {
-    display: flex;
     flex-direction: column;
-    align-items: center; /* по вертикали */
   }
 
   .photo1 {
-    width: 563.83px;
-    height: 317px;
-    padding-left: 35px;
-    border-radius: 17px;
     padding-top: 200px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
   }
 
-  .hero-text {
-    position: static; /* убираем абсолютное позиционирование */
-    margin-top: 20px;
-    color: black; /* если нужно поменять цвет под фон */
+  .photo2 {
+    padding-bottom: 0;
+    padding-top: 68px;
+  }
+
+  .level2 {
+    padding-top: 68px;
+  }
+
+  .photo5 {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  #headernav ul {
+    padding-top: 36px;
+    font-size: 15px; /*размер шрифта*/
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  #headernav a {
+    margin-left: 15px; /*внешние отступы с лева*/
+  }
+
+  #team {
+    margin-right: 15px;
+  }
+  #logo{
+    margin-left: 15px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main0 {
+    flex-direction: column;
+  }
+
+  .photo1 {
+    padding-top: 200px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+  }
+
+  .photo2 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+  }
+
+  .photo3 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo4 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .level2 {
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .photo5 {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 1300px) {
+  #headernav ul {
+    padding-top: 36px;
+    font-size: 15px; /*размер шрифта*/
+    padding-left: 14px;
+    margin-right: 14px;
+  }
+
+  #headernav a {
+    margin-left: 15px; /*внешние отступы с лева*/
+  }
+
+  #team {
+    margin-right: 15px;
+  }
+  #logo{
+    margin-left: 15px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main0 {
+    flex-direction: column;
+  }
+
+  .photo1 {
+    padding-top: 200px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+  }
+
+  .photo2 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+  }
+
+  .photo3 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo4 {
+    padding-bottom: 0;
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .level2 {
+    padding-top: 68px;
+    align-items: center; /* по вертикали */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .photo5 {
+    padding-top: 10px;
+    padding-left: 0;
   }
 }
