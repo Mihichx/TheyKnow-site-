@@ -54,7 +54,7 @@ footer {
   color: #FFFFFF; /*цвет*/
   text-decoration: none; /*убираем подчёркивание*/
 }
-#headernav ul {
+#header ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0;
   padding-left: 35px;
@@ -65,21 +65,21 @@ footer {
   font-size: 20px; /*размер шрифта*/
   letter-spacing: 0.5px; /*интервал между буквами*/
 }
-#headernav li {
+#header li {
   display: inline; /*выстраиваем пункты меню в ряд*/
 }
-#headernav a {
+#header a {
   text-decoration: none; /*убираем подчёркивание*/
   color: white;
   margin-left: 50px; /*внешние отступы с лева*/
 }
-#team {
+#team-name {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 30px;
 }
-#logo{
+#name-game{
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -87,7 +87,7 @@ footer {
 .opacity:active {
   opacity: 0.6;
 }
-.team {
+.team-name {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400; /*толщина букв*/
@@ -100,13 +100,13 @@ footer {
   width: 100%;
   height: 1080px;
 }
-.mainimg {
+.main-img {
   width: 100%;
   max-width: 1920px;
   height: 1080px;
   filter: blur(6.5px);
 }
-.main-name-game{
+.greeting-name-game{
   position: absolute; /* Текст - абсолютная позиция */
   top: 45%; /* Позиционирование по вертикали */
   left: 50%; /* Позиционирование по горизонтали */
@@ -143,16 +143,7 @@ footer {
   top: 1015px;
   background: rgba(0, 0, 0, 0.91);
 }
-.titlecom1 {     
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #FFFFFF;
-}
-.main {
+.block {
   display: flex;
   align-items: center; /* по вертикали */
   height: auto;
@@ -160,8 +151,10 @@ footer {
 .photo1 {
   width: 563.83px;
   height: 317px;
-  padding-left: 35px;
   border-radius: 17px;
+}
+.img1 {
+  padding-left: 35px;
 }
 .description {
   text-align: left;     /* текст внутри ссылки прижат влево */
@@ -239,18 +232,6 @@ footer {
   width: 378px;
   height: 440px;
 }
-.frame {
-  position: relative;
-  display: flex;
-  justify-content: center; /* по горизонтали */
-  align-items: center; /* по вертикали */
-  width: 100%;
-  max-width: 1920px;
-  height: 131px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.91);
-}
 .level1 {
   display: flex;
   align-items: center; /* по вертикали */
@@ -279,6 +260,8 @@ footer {
   width: 896.44px;
   height: 504px;
   border-radius: 17px;
+}
+.img2 {
   padding-left: 34px;
   padding-top: 105px;
   padding-bottom: 127px;
@@ -304,6 +287,8 @@ footer {
   width: 827px;
   height: 465px;
   border-radius: 17px;
+}
+.img3 {
   padding-bottom: 35.5px;
   padding-right: 34px;
 }
@@ -311,6 +296,8 @@ footer {
   width: 827px;
   height: 465px;
   border-radius: 17px;
+}
+.img4 {
   padding-top: 35.5px;
   padding-right: 34px;
 }
@@ -324,7 +311,7 @@ footer {
 .location-description5 {
   padding-top: 21px;
 }
-.main0 {
+.block0 {
   display: flex;
   flex-direction:row-reverse;
   align-items: center; /* по вертикали */
@@ -401,16 +388,7 @@ footer {
   top: 0;  /* Критически важно! */
   z-index: 1000;  /* Шапка должна быть поверх других элементов */
 }
-#scroll2 {
-  scroll-margin-top: 89px;
-}
-#scroll3 {
-  scroll-margin-top: 89px;
-}
-#scroll4 {
-  scroll-margin-top: 89px;
-}
-#scroll5 {
+#scroll2, #scroll3, #scroll4, #scroll5 {
   scroll-margin-top: 89px;
 }
 @media (max-width: 768px) {
@@ -418,43 +396,45 @@ footer {
     font-size: 15px; /*размер шрифта*/
   }
 
-  #headernav ul {
+  #header ul {
     padding-top: 36px;
     font-size: 15px; /*размер шрифта*/
     padding-left: 10px;
     margin-right: 10px;
   }
 
-  #headernav a {
+  #header a {
     margin-left: 15px; /*внешние отступы с лева*/
   }
 
-  #team {
+  #team-name {
     margin-right: 15px;
   }
-  #logo{
+  #name-game{
     margin-left: 15px;
   }
 
-  .team {
+  .team-name {
     font-size: 15px; /*размер шрифта*/
   }
 
-  .main {
+  .block {
     flex-direction: column;
   }
 
-  .main0 {
+  .block0 {
     flex-direction: column;
   }
 
   .photo1 {
-    padding-top: 200px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
+  }
+  .img1 {
+    padding-left: 0px;
+    padding-top: 200px;
   }
 
-  .photo2 {
+  .img2 {
     padding-bottom: 0;
     padding-top: 68px;
   }
@@ -467,60 +447,82 @@ footer {
     padding-top: 10px;
     padding-left: 0;
   }
+
+  .speciality0 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 34px;
+    padding-bottom: 12px;
+  }
+  .speciality1 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 12px;
+    padding-bottom: 34px;
+  }
 }
 @media (max-width: 992px) {
-  #headernav ul {
+  #header ul {
     padding-top: 36px;
     font-size: 15px; /*размер шрифта*/
     padding-left: 10px;
     margin-right: 10px;
   }
 
-  #headernav a {
+  #header a {
     margin-left: 15px; /*внешние отступы с лева*/
   }
 
-  #team {
+  #team-name {
     margin-right: 15px;
   }
-  #logo{
+  #name-game{
     margin-left: 15px;
   }
 
-  .main {
+  .block {
     flex-direction: column;
   }
 
-  .main0 {
+  .block0 {
     flex-direction: column;
   }
 
   .photo1 {
-    padding-top: 200px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
+  }
+  .img1 {
+    padding-left: 0px;
+    padding-top: 200px;
   }
 
   .photo2 {
+    align-items: center; /* по вертикали */
+  }
+  .img2 {
+    padding-left: 0;
     padding-bottom: 0;
     padding-top: 68px;
-    align-items: center; /* по вертикали */
-    padding-left: 0;
   }
 
   .photo3 {
-    padding-bottom: 0;
-    padding-top: 68px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
-    padding-right: 0;
+  }
+
+  .img3 {
+    padding-top: 68px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 
   .photo4 {
-    padding-bottom: 0;
-    padding-top: 68px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
+  }
+
+  .img4 {
+    padding-top: 68px;
     padding-right: 0;
   }
 
@@ -535,60 +537,83 @@ footer {
     padding-top: 10px;
     padding-left: 0;
   }
+
+  .speciality0 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 34px;
+    padding-bottom: 12px;
+  }
+  .speciality1 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 12px;
+    padding-bottom: 34px;
+  }
 }
 @media (max-width: 1300px) {
-  #headernav ul {
+  #header ul {
     padding-top: 36px;
     font-size: 15px; /*размер шрифта*/
     padding-left: 14px;
     margin-right: 14px;
   }
 
-  #headernav a {
+  #header a {
     margin-left: 15px; /*внешние отступы с лева*/
   }
 
-  #team {
+  #team-name {
     margin-right: 15px;
   }
-  #logo{
+  #name-game{
     margin-left: 15px;
   }
 
-  .main {
+  .block {
     flex-direction: column;
   }
 
-  .main0 {
+  .block0 {
     flex-direction: column;
   }
 
   .photo1 {
-    padding-top: 200px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
+  }
+  .img1 {
+    padding-left: 0px;
+    padding-top: 200px;
   }
 
   .photo2 {
+    align-items: center; /* по вертикали */
+  }
+
+  .img2 {
+    padding-left: 0;
     padding-bottom: 0;
     padding-top: 68px;
-    align-items: center; /* по вертикали */
-    padding-left: 0;
   }
 
   .photo3 {
-    padding-bottom: 0;
-    padding-top: 68px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
-    padding-right: 0;
+  }
+
+  .img3 {
+    padding-top: 68px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 
   .photo4 {
-    padding-bottom: 0;
-    padding-top: 68px;
     align-items: center; /* по вертикали */
-    padding-left: 0;
+  }
+
+  .img4 {
+    padding-top: 68px;
     padding-right: 0;
   }
 
@@ -602,5 +627,20 @@ footer {
   .photo5 {
     padding-top: 10px;
     padding-left: 0;
+  }
+
+  .speciality0 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 34px;
+    padding-bottom: 12px;
+  }
+  .speciality1 {
+    align-items: center; /* по вертикали */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 12px;
+    padding-bottom: 34px;
   }
 }
