@@ -3,8 +3,10 @@
   padding: 0; /*внутренние отступы*/
 }
 html,body {
-  height: 100%; /*высота*/
+  height: auto; /*высота*/
   background-color: #F2F2F2; /*цвет фона*/
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth; /*плавная прокрутка*/
@@ -12,6 +14,15 @@ html {
 header, main, footer {
   width: 100%; /*ширина*/
   margin: 0 auto; /*внешние отступы (авто)*/
+}
+#wrapper {
+  display: flex; /*flex-контейнер*/
+  flex-direction: column; /*расположение компонентов с веху вниз*/
+  min-height: 100%; /*взять из макета*/
+  height: auto !important;
+  height: 100%; /*высота*/
+  width: 100%; /*ширина*/
+  vertical-align: middle;
 }
 header {
   display: flex;
@@ -27,24 +38,14 @@ main {
 }
 footer {
   display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
   height: 185px; /*высота*/
   background: rgba(0, 0, 0, 0.91); /*цвет фона*/
 }
 .center {
   left: 50%; /* Позиционирование по горизонтали */
   transform: translate(-50%, -50%); /* Центрирование текста */
-}
-.content {
-  display: flex; /*flex-контейнер*/
-  flex-direction: column; /*расположение компонентов с веху вниз*/
-  height: 100%; /*высота*/
-  min-height: 100%; /*мин высота*/
-  height: auto !important; /*высота с приоритетом*/
-  width: auto; /*ширина*/
-  margin-top: 0; /*отступы с верху*/
-  margin-bottom: 0; /*отступы с низу*/
-  margin-left: auto; /*отступы с лева*/
-  margin-right: auto; /*отступы с права*/
 }
 .name-game {
   font-style: normal;
@@ -332,29 +333,67 @@ footer {
   flex-direction:column;
   align-items: center; /* по вертикали */
 }
-#footernav ul {
-  list-style: none; /*убираем маркеры списка*/
-  margin: 0;
-  padding-left: 14px;
+.speciality {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-top: 52px;
+}
+.speciality0 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-left: 90px;
+  padding-right: 127.5px;
+  padding-top: 34px;
+  padding-bottom: 86px;
+}
+.speciality1 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-top: 63px;
+  padding-bottom: 115px;
+  padding-left: 127.5px;
+  padding-right: 90px;
+}
+.team1 {
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400; /*толщина букв*/
-  font-size: 16px; /*размер шрифта*/
-  letter-spacing: 0.5px; /*интервал между буквами*/
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 54px;
+  color: #000000;
 }
-#footernav li {
-  display: inline; /*выстраиваем пункты меню в ряд*/
+.team2 {
+  text-align: left;     /* текст внутри ссылки прижат влево */
+  width: auto;
+  height: auto;
+  padding-top: 21px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 54px;
+  color: #000000;
 }
-#footernav a {
-  text-decoration: none; /*убираем подчёркивание*/
-  color: white;
-  margin-left: 50px; /*внешние отступы с лева*/
+.game {
+  width: auto;
+  height: auto;
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
 }
-#footernav {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+.photo5 {
+  width: 69px;
+  height: 69px;
+  padding-left: 33px;
 }
 .sticky-header {
   position: fixed;
@@ -372,4 +411,31 @@ footer {
 }
 #scroll5 {
   scroll-margin-top: 89px;
+}
+@media (max-width: 1300px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+  }
+
+  .photo1 {
+    width: 563.83px;
+    height: 317px;
+    padding-left: 35px;
+    border-radius: 17px;
+    padding-top: 200px;
+  }
+
+  .hero-text {
+    position: static; /* убираем абсолютное позиционирование */
+    margin-top: 20px;
+    color: black; /* если нужно поменять цвет под фон */
+  }
 }
