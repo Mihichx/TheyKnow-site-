@@ -32,7 +32,7 @@ header {
 main {
   display: flex;
   flex-direction: column; /*расположение компонентов с веху вниз*/
-  width: 100%;
+  width: 100%; /*ширина*/
   max-width: 1920px;
   text-align: center;
 }
